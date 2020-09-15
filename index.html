@@ -14,5 +14,76 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
-    <body></body>
+    <body>
+      <header class="home">
+        <nav class="navbar">
+          <div class="navbar__logo">
+            <img src="images/favicon.png" alt="">
+            <span class="navbar__logo__name">Juhyeok</span>
+          </div>
+          <ul class="navbar__menu">
+            <li>Home</li>
+            <li>About</li>
+            <li>Skills</li>
+            <li>Portfolio</li>
+            <li>Testimonials</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+        <section class="profile">
+          <img src="images/profile.png" alt="" class="profile__img">
+          <span class="profile__title">Hello, I'm Juhyeok</span>
+          <span class="profile__text">A Software Engineer currently residing in Busan, Korea.</span>
+          <span class="profile__tag">CONTACT ME</span>
+        </section>
+      </header>
+      <section class="aboutMe">
+        <header class="introduce">
+          <span class="introduce__title">About me</span>
+          <span class="introduce__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut pretium pretium tempor. Ut eget imperdiet neque. In</span>
+          <span class="introduce__text">volutpat ante Semper diam molestie, et aliquam erat Sed Sit amet aliquet, molestie justo at, auctor nunc.</span>
+          <span class="introduce__text">Phasellus ligula ipsum, volutpateget semper id, viverra eget nibh. Suspendisse luaus mattis cur</span>
+        </header>
+        <ul class="stack">
+          <li>
+            <i class="fab fa-html5"></i>
+            <span class="stack__title">Front-end</span>
+            <span class="stack__text">HTML, CSS, JavaScript, Vue</span>
+          </li>
+          <li>
+            <i class="fas fa-shield-alt"></i>
+            <span class="stack__title">Security</span>
+            <span class="stack__text">Reversing, SQL Injection, SSDT Hooking</span>
+          </li>
+          <li>
+            <i class="fab fa-laravel"></i>
+            <span class="stack__title">Back-end</span>
+            <span class="stack__text">JavaScript, PHP(Laravel), RestAPIs</span>
+          </li>
+        </ul>
+        <ul class="career">
+          <li>
+            <img src="images/deu.png" alt="" class="career__img">
+            <div>
+              <span class="career__name">동의대학교 (컴퓨터공학 과정)</span>
+              <span class="period">2013.03 - 2020.02</span>
+            </div>
+          </li>
+          <li>
+            <img src="images/joongbu-information-security.jpg" style="border-radius: 50%;" alt="" class="career__img">
+            <div>
+              <span class="career__name">중부정보보호지원센터 교육 (웹취약점 진단 및 모의해킹 실무 과정)</span>
+              <span class="period">2020.09</span>
+            </div>
+          </li>
+          <li>
+            <img src="images/k-shield.png" alt="" class="career__img">
+            <div>
+              <span class="career__name">K-Shield 주니어 (보안사고 분석대응 과정)</span>
+              <span class="period">2020.08 - 2020.11</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </body>
 </html>

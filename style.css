@@ -1,0 +1,132 @@
+:root {
+  /* color */
+  --white-color: #fff;
+  --black--color: #140a00;
+  --blue-color: #045fd4;
+  --red-color: #ff0000;
+  --grey-dark-color: #909090;
+  --grey-light-color: #e0e0e0;
+
+  /* Size */
+  --padding: 12px;
+  --margin: 40px;
+  --profile-size: 150px;
+  --logo-size: 60px;
+
+  /* Font Size */
+  --font-large: 18px;
+  --font-medium: 14px;
+  --font-small: 12px;
+  --font-micro: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+/* Home */
+.home {
+  background: url(images/home-background.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.home .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white-color);
+  position: sticky;
+  top: 0;
+}
+
+.home .navbar .navbar__logo {
+  display: flex;
+  align-items: center;
+}
+
+.home .navbar .navbar__logo img {
+  width: var(--logo-size);
+  height: var(--logo-size);
+}
+
+.home .navbar .navbar__menu {
+  display: flex;
+}
+
+.home .navbar .navbar__menu li {
+  padding: var(--padding);
+}
+
+.home .profile {
+  display: flex;
+  align-items: center;
+  color: var(--white-color);
+  flex-direction: column;
+}
+
+.home .profile .profile__img {
+  width: var(--profile-size);
+  border-radius: 50%;
+}
+
+/* About me */
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+}
+.aboutMe .introduce {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.aboutMe .introduce .introduce__text {
+  font-size: var(--font-medium);
+}
+
+.aboutMe .stack {
+  display: flex;
+  margin: var(--margin) 0;
+  justify-content: space-around;
+}
+
+.aboutMe .stack li {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.aboutMe .stack li i {
+  font-size: var(--logo-size);
+}
+
+.aboutMe .stack li .stack__text {
+  font-size: var(--font-small);
+}
+
+.aboutMe .career {
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--margin);
+}
+.aboutMe .career .career__img {
+  width: var(--logo-size);
+  margin: calc(var(--padding) / 2);
+}
+
+.aboutMe .career li {
+  display: flex;
+  align-items: center;
+}
+
+.aboutMe .career li div {
+  display: flex;
+  flex-direction: column;
+}
